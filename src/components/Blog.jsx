@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Queshion from "./Queshion.jsx";
 import Email from "./Email.jsx";
 import Ellipse from "../assets/Ellipse.png";
-import Images from "../assets/images.png";
 import foos from "../assets/foos.png";
 import loas from "../assets/loas.png";
 import erons from "../assets/erons.png";
@@ -11,7 +10,7 @@ import yurt from "../assets/yurt.png";
 import lopq from "../assets/lopq.png";
 
 const articles = [
-  { id: 1, img: Images, title: "How To Order Food ?" },
+  { id: 1, img: yurt, title: "How To Order Food ?" },
   { id: 2, img: foos, title: "How To Track The Order ?" },
   { id: 3, img: loas, title: "How To Manage Cards ?" },
   { id: 4, img: erons, title: "Tips & Tricks For Business" },
@@ -35,7 +34,7 @@ function Blog() {
             >
               <div className="flex justify-center">
                 {/* Rasmni bosganda alohida sahifaga yo‘naltiramiz */}
-                <Link to={`/image/${article.id}`}>
+                <Link to={`/yurt/${article.id}`}>
                   <img
                     src={article.img}
                     alt={article.title}
